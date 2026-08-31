@@ -1,42 +1,62 @@
-// Base de données étendue (Tu peux en ajouter à l'infini ici)
+// Base de données étendue - PROMO NEXUS
 const promoDatabase = [
-    // GAMING
+    // --- GAMING & JEUX VIDÉO ---
     { domain: "Steam", category: "JEUX PC", code: "WINTER24", active: true },
-    { domain: "Steam", category: "JEUX PC", code: "GABEN", active: false },
-    { domain: "Instant Gaming", category: "CLES", code: "IG-SUMMER", active: true },
-    { domain: "Epic Games", category: "STORE", code: "EPIC5", active: true },
-    { domain: "PlayStation", category: "CONSOLE", code: "PSN20", active: false },
-    { domain: "Xbox", category: "PASS", code: "XBOX1EURO", active: true },
-    { domain: "Nintendo", category: "ESHOP", code: "MARIO2024", active: true },
+    { domain: "Instant Gaming", category: "CLES PC/CONSO", code: "IG-PROMO-5", active: true },
+    { domain: "Epic Games", category: "STORE", code: "EPIC-MEGA", active: true },
+    { domain: "G2A", category: "CLES", code: "G2A-SAVE", active: true },
+    { domain: "Eneba", category: "CLES", code: "ENEBA-SALE", active: true },
+    { domain: "PlayStation Store", category: "CONSO", code: "PSN-PLUS-10", active: false },
+    { domain: "Xbox Game Pass", category: "ABONNEMENT", code: "XBOX1EURO", active: true },
+    { domain: "Nintendo eShop", category: "SWITCH", code: "MARIO-DAY", active: false },
+    { domain: "Ubisoft Connect", category: "JEUX PC", code: "UBI-SOFT-20", active: true },
+    { domain: "Battle.net", category: "BLIZZARD", code: "WOW-BACK", active: true },
 
-    // E-COMMERCE & TECH
-    { domain: "Amazon", category: "HIGH-TECH", code: "AMZ10OFF", active: true },
-    { domain: "Amazon", category: "LIVRES", code: "READ5", active: false },
-    { domain: "Cdiscount", category: "GENERAL", code: "PROMO25", active: true },
-    { domain: "Fnac", category: "CULTURE", code: "ADHERENT10", active: true },
-    { domain: "Darty", category: "ELECTRO", code: "DARTY5", active: true },
-    { domain: "AliExpress", category: "GADGETS", code: "NEWUSER88", active: true },
+    // --- HIGH-TECH & E-COMMERCE ---
+    { domain: "Amazon", category: "GENERAL", code: "TECH-DEAL-10", active: true },
+    { domain: "Cdiscount", category: "HIGH-TECH", code: "PROMO25", active: true },
+    { domain: "Fnac", category: "CULTURE/TECH", code: "FNAC10", active: true },
+    { domain: "Darty", category: "ELECTRO", code: "DARTY-SALE", active: false },
+    { domain: "AliExpress", category: "GADGETS", code: "ALI-NEW-8", active: true },
+    { domain: "Samsung", category: "SMARTPHONE", code: "GALAXY-S24", active: true },
+    { domain: "Apple", category: "TECH", code: "STUDENT-OFFER", active: true },
+    { domain: "Lenovo", category: "PC PORTABLE", code: "LENOVO-PRO", active: true },
+    { domain: "Dell", category: "PC", code: "DELL-SAVE-15", active: false },
+    { domain: "Rakuten", category: "GENERAL", code: "RAKUTEN-5", active: true },
 
-    // MODE
-    { domain: "Nike", category: "SPORT", code: "NIKE20", active: true },
-    { domain: "Adidas", category: "SPORT", code: "STRIPES30", active: true },
-    { domain: "Zalando", category: "MODE", code: "ZALANDO15", active: false },
-    { domain: "ASOS", category: "MODE", code: "ASOSNEW", active: true },
-    { domain: "Shein", category: "MODE", code: "SHEINFR24", active: true },
+    // --- MODE & SPORT ---
+    { domain: "Nike", category: "SPORT", code: "NIKE-RUN-20", active: true },
+    { domain: "Adidas", category: "SPORT", code: "ADI-SUMMER", active: true },
+    { domain: "Zalando", category: "MODE", code: "ZALANDO-15", active: false },
+    { domain: "ASOS", category: "MODE", code: "ASOS-NEW-20", active: true },
+    { domain: "Shein", category: "MODE", code: "SHEIN-FR", active: true },
+    { domain: "JD Sports", category: "BASKETS", code: "JD-SALE", active: true },
+    { domain: "H&M", category: "MODE", code: "HM-MEMBER", active: true },
+    { domain: "Zara", category: "MODE", code: "ZARA-OFF", active: false },
+    { domain: "Puma", category: "SPORT", code: "PUMA-FAST", active: true },
+    { domain: "Lacoste", category: "MODE", code: "CROC-10", active: true },
 
-    // FOOD
-    { domain: "Uber Eats", category: "REPAS", code: "EATS-FR55", active: true },
+    // --- ALIMENTATION & LIVRAISON ---
+    { domain: "Uber Eats", category: "REPAS", code: "EATS-FAST-15", active: true },
     { domain: "Deliveroo", category: "REPAS", code: "ROO-FREE", active: false },
-    { domain: "Burger King", category: "FOOD", code: "KINGDEAL", active: true },
+    { domain: "Burger King", category: "FOOD", code: "KING-DEAL", active: true },
+    { domain: "McDonald's", category: "FOOD", code: "MAC-APP-OFFER", active: true },
+    { domain: "HelloFresh", category: "BOX REPAS", code: "HELLO-BOX-80", active: true },
+    { domain: "Domino's Pizza", category: "FOOD", code: "MARDI-FOUS", active: true },
 
-    // VOYAGE
-    { domain: "Booking.com", category: "HOTEL", code: "TRAVEL2024", active: true },
-    { domain: "Airbnb", category: "LOGEMENT", code: "WELCOME-AIR", active: false }
+    // --- SERVICES & DIVERS ---
+    { domain: "NordVPN", category: "SECURITE", code: "NORD-CYBER", active: true },
+    { domain: "Sephora", category: "BEAUTÉ", code: "BEAUTY-25", active: true },
+    { domain: "Booking.com", category: "VOYAGE", code: "HOTEL-SAVE", active: true },
+    { domain: "Airbnb", category: "VOYAGE", code: "AIR-GUEST", active: false },
+    { domain: "Netflix", category: "STREAMING", code: "NETFLIX-FREE", active: false },
+    { domain: "Disney+", category: "STREAMING", code: "DISNEY-PLUS", active: true }
 ];
 
 const searchInput = document.getElementById('searchInput');
 const resultsDiv = document.getElementById('results');
 
+// Fonction de recherche
 searchInput.addEventListener('input', () => {
     const query = searchInput.value.toLowerCase();
     resultsDiv.innerHTML = "";
@@ -69,6 +89,7 @@ searchInput.addEventListener('input', () => {
     });
 });
 
+// Fonction de copie
 function copyCode(text) {
     navigator.clipboard.writeText(text);
     alert("Code " + text + " copié dans le presse-papier !");
