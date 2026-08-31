@@ -45,7 +45,6 @@ h1 {
     padding: 0 20px;
 }
 
-/* Barre de recherche */
 .search-wrapper {
     position: relative;
     margin-bottom: 50px;
@@ -72,11 +71,11 @@ input {
     pointer-events: none;
 }
 
-/* Cartes de résultats */
 .results-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    min-height: 200px;
 }
 
 .card {
@@ -143,7 +142,6 @@ footer {
     opacity: 0.5;
 }
 
-/* Styles pour les onglets de filtrage */
 .filter-tabs {
     display: flex;
     justify-content: center;
@@ -171,7 +169,6 @@ footer {
     box-shadow: 0 0 15px var(--neon-blue);
 }
 
-/* Badge de type */
 .type-badge {
     position: absolute;
     top: 10px;
